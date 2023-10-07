@@ -1,0 +1,180 @@
+@import url(https://fonts.googleapis.com/css?family=Michroma&display=swap);
+
+body {
+    background: linear-gradient(90deg, #010b98 0%, #0d0352 50%, #0d082b 100%);
+    font-family: Michroma, serif;
+}
+
+p {
+    color: rgb(192, 233, 233);
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    margin: 3px;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(192, 233, 233)
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-toggler {
+    background-color: rgba(94, 93, 93, 0.705);
+
+}
+
+.btn {
+    background-color: rgb(149, 6, 215);
+    border-color: rgb(98, 4, 175);
+}
+
+.sidebar {
+    color: rgb(192, 233, 233);
+    background: linear-gradient(270deg, #010b98 0%, #0d0352 50%, #0d082b 100%);
+}
+
+.card {
+    color: rgb(192, 233, 233);
+    background: linear-gradient(270deg, #010b98 0%, #0d0352 50%, #0d082b 100%);
+}
+
+.card a {
+    text-decoration: none;
+    color: rgb(192, 233, 233);
+}
+
+.slide-text,
+.footer-text {
+    color: rgb(192, 233, 233);
+    margin: auto auto;
+}
+
+.info {
+    margin-top: 10px;
+}
+
+footer,
+.btn-outline-primary {
+    background: linear-gradient(270deg, #010b98 0%, #0d0352 50%, #0d082b 100%);
+}
+
+.call-anim {
+    animation: myAnim 2s ease 0s infinite normal none;
+}
+
+@keyframes myAnim {
+
+    0%,
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30% {
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+.pagination {
+    justify-content: center;
+    text-align: center;
+}
+
+.page-link {
+    color: rgb(235, 221, 249);
+    background-color: #0d082b;
+    border-color: rgb(235, 221, 249);
+    font-size: 14pt;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #1e1264;
+    border-color: rgb(235, 221, 249);
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oct-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+.toast-header {
+    background-color: #0d0352;
+    color: aliceblue;
+}
+
+.toast {
+    display: block !important;
+    background-color: rgb(98, 110, 157);
+    color: aliceblue;
+}
+
+.text-muted {
+    color: aliceblue !important;
+}
+
+.media-links>img:hover {
+    animation: AppAnim 1s linear 0s 1 normal none;
+}
+
+.comments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(192, 233, 233);
+}
+
+@keyframes AppAnim {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.sidebar p {
+    padding: 10px;
+}
