@@ -43,6 +43,12 @@ p {
     background: linear-gradient(270deg, #010b98 0%, #0d0352 50%, #0d082b 100%);
 }
 
+/* Added .card-txt font-size because lower right card has too much text to be displayed in two rows like others */
+/* Also that way it is more readable, imho */
+.card-txt {
+    font-size: 0.85rem;
+}
+
 .card a {
     text-decoration: none;
     color: rgb(192, 233, 233);
@@ -175,6 +181,7 @@ h2 {
     }
 }
 
+/* Try not to use pixels at all, when you'll try to make mobile version you'll thank yourself for the effort */
 .sidebar p {
     padding: 10px;
 }
